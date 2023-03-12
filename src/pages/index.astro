@@ -12,6 +12,17 @@
 		<title>{ title }</title>
 	</head>
 	<body>
-		<h1>{ msg }</h1>
+		<p>{ msg}</p>
+		<h1 id="container"></h1>
 	</body>
 </html>
+
+<style>
+h1 {
+	color: red
+}
+</style>
+
+<script>
+document.querySelector("#container").textContent = "Hello world!"
+</script>
