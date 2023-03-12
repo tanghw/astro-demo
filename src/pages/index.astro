@@ -1,27 +1,14 @@
 ---
-	const title = "index page"
+import Layout from '../layouts/Layout.astro'
+	const title = "about page"
 	const msg =  "Astro Docs"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{ title }</title>
-	</head>
-	<body>
-		<p>{ msg}</p>
-		<h1 id="container"></h1>
-	</body>
-</html>
 
-<style>
-h1 {
-	color: red
-}
-</style>
+<Layout>
+	<p>{ msg}</p>
+	<h1 id="container"></h1>
+</Layout>
 
 <script>
 document.querySelector("#container").textContent = "Hello world!"
